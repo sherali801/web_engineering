@@ -3,18 +3,20 @@ import java.util.*;
 import javax.swing.*;
 
 public class ContactDAO extends GenericDAO {
-	
+
+    private String table;
 	private ArrayList<Contact> contacts;
-	
+
 	public ContactDAO() {
+        table = "contact";
 		contacts = new ArrayList<Contact>();
 		read();
 	}
-	
+
 	public ArrayList<Contact> getContacts() { return contacts; }
-	
+
 	public boolean create(Contact contact) {
-		String sql = "INSERT INTO contact ("
+		String sql = "INSERT INTO " + table + " ("
 				+ "name, address, phone_no, email"
 				+ ") VALUES ("
 				+ "?, ?, ?, ?"
@@ -33,13 +35,14 @@ public class ContactDAO extends GenericDAO {
 		}
 		return flag;
 	}
-	
+
 	public void read() {
-		String sql = "SELECT * FROM contact";
+		String sql = "SELECT * FROM " + table;
 		Contact contact = null;
 		try {
 			Statement stmt = conn.createStatement();
 			ResultSet rs = stmt.executeQuery(sql);
+			contacts.clear();
 			while (rs.next()) {
 				contact = new Contact();
 				contact.setName(rs.getString("name"));
@@ -54,9 +57,9 @@ public class ContactDAO extends GenericDAO {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public Contact read(String name) {
-		String sql = "SELECT * FROM contact WHERE name = ?";
+		String sql = "SELECT * FROM " + table + " WHERE name = ?";
 		Contact contact = null;
 		try {
 			PreparedStatement preStmt = conn.prepareStatement(sql);
@@ -76,9 +79,9 @@ public class ContactDAO extends GenericDAO {
 		}
 		return contact;
 	}
-	
+
 	public boolean update(String searchName, Contact contact) {
-		String sql = "UPDATE contact SET "
+		String sql = "UPDATE " + table + " SET "
 				+ "name = ?, "
 				+ "address = ?, "
 				+ "phone_no = ?, "
@@ -99,9 +102,9 @@ public class ContactDAO extends GenericDAO {
 		}
 		return flag;
 	}
-	
+
 	public boolean delete(String name) {
-		String sql = "DELETE FROM contact WHERE name = ?";
+		String sql = "DELETE FROM " + table + " WHERE name = ?";
 		boolean flag = false;
     	try {
 			PreparedStatement preStmt = conn.prepareStatement(sql);
@@ -113,5 +116,5 @@ public class ContactDAO extends GenericDAO {
 		}
     	return flag;
 	}
-	
+
 }

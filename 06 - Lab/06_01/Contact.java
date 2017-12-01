@@ -1,12 +1,12 @@
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 public class Contact {
-	
+
     private String name;
     private String address;
     private String phoneNo;
     private String email;
-    
+
     public Contact() { }
 
     public Contact(String name, String address, String phoneNo, String email) {
@@ -27,9 +27,9 @@ public class Contact {
 	public String getPhoneNo() { return phoneNo; }
 
 	public void setPhoneNo(String phoneNo) { this.phoneNo = phoneNo; }
-        
+
     public String getEmail() { return this.email; }
-        
+
     public void setEmail(String email) { this.email = email; }
-    
+
 }
