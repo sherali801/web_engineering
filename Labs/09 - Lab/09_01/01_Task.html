@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>01 - Task</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div id="header">
+    <img src="yahoo.png" alt="yahoo">
+    <a href="#">Help</a>
+</div>
+<div class="clr" id="mainBackground">
+    <div id="container">
+        <p id="signUp">Sign up</p>
+        <form action="" method="post">
+            <input type="text" name="firstName" placeholder="First name" required>
+            <input type="text" name="lastName" placeholder="Last name" required><br>
+            <input type="email" name="email" placeholder="Email address" required><br>
+            <a href="#" id="ownEmail">I'd rather use my own email address</a><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <select name="mobileExtension" required>
+                <option value="+1">+1</option>
+                <option value="+91">+91</option>
+                <option value="+92">+92</option>
+            </select>
+            <input type="tel" name="mobileNumber" placeholder="Mobile phone number" required><br>
+            <select name="birthMonth" required>
+                <option disabled selected>Birth Month</option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+            </select>
+            <input type="text" name="birthDay" placeholder="Day" required>
+            <input type="text" name="birthYear" placeholder="Year" required><br>
+            <select name="gender" id="gender">
+                <option disabled selected>Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <input type="submit" name="submit" value="Continue">
+            <p>Already have an account? <a href="#">Sign in</a></p>
+            <p id="agreement">I agree to the Yahoo<a href="#">Terms</a> and <a href="#">Privacy</a></p>
+        </form>
+    </div>
+</div>
+</body>
+</html>

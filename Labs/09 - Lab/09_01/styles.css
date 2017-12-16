@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #188FFF;
+}
+
+#header {
+    height: 30px;
+    padding: 15px 0px;
+}
+
+#header img {
+    float: left;
+    padding-left: 95px;
+}
+
+#header a {
+    padding: 5px 5px 0px 0px;
+    float: right;
+}
+
+.clr {
+    clear: both;
+}
+
+#mainBackground {
+    background: #F9F9FA;
+    padding-top: 65px;
+    padding-bottom: 50px;
+}
+
+#container {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+    z-index: 1;
+    background: #FFF;
+    width: 360px;
+    height: 550px;
+    margin: auto;
+}
+
+#container form {
+    padding: 20px;
+}
+
+input, select {
+    border-width: 0px 0px 2px 0px;
+    padding: 10px;
+    margin: 5px;
+}
+
+input[name="firstName"], input[name="lastName"] {
+    width: 128px;
+}
+
+input[name="email"], input[name="password"] {
+    width: 290px;
+}
+
+input[name="mobileNumber"] {
+    width: 210px;
+}
+
+select[name="birthMonth"] {
+    width: 140px;
+}
+
+input[name="birthDay"], input[name="birthYear"] {
+    width: 50px;
+}
+
+#gender, input[name="submit"] {
+    width: 310px;
+}
+
+select#gender {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[name="submit"] {
+    background: #188FFF;
+    color: #FFF;
+    font-size: 16px;
+    border: 0px;
+    margin-top: 25px;
+    height: 45px;
+    border-radius: 2px;
+}
+
+form a#ownEmail {
+    font-size: smaller;
+    padding-left: 10px;
+    margin-top: 0px;
+    color: #188FFF;
+}
+
+form p {
+    font-size: 16px;
+    text-align: center;
+    padding-left: 10px;
+}
+
+#agreement {
+    font-size: 10px
+    margin-top: 30px;
+    font-size: smaller;
+}
+
+#signUp {
+    font-size: 18px;
+    margin: 0px;
+    padding: 25px 0px 0px 0px;
+    text-align: center;
+}
