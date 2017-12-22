@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Info Submission</title>
+</head>
+<body>
+<form action="http://localhost:8088/10 - Lab/info_submission" method="post">
+    <table>
+        <tr>
+            <td><label for="firstName">First Name:</label></td>
+            <td><input type="text" name="firstName" id="firstName" pattern="[A-Za-z]*" required autofocus></td>
+        </tr>
+        <tr>
+            <td><label for="lastName">Last Name:</label></td>
+            <td><input type="text" name="lastName" id="lastName" pattern="[A-Za-z]*" required></td>
+        </tr>
+        <tr>
+            <td><label id="dob">Date of Birth:</label></td>
+            <td><input type="date" name="dob" id="dob" required></td>
+        </tr>
+        <tr>
+            <td><label>Gender:</label></td>
+            <td>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" name="email" id="email" pattern="^[\w.%+\-]+@[\w.\-]+\.[A-Za-z]{2,6}$" required></td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="submit" value="Submit"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

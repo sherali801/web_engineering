@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app>
+
+<servlet>
+    <servlet-name>HelloWorld</servlet-name>
+    <servlet-class>HelloWorldServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>HelloWorld</servlet-name>
+    <url-pattern>/hello_world</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>InfoSubmission</servlet-name>
+    <servlet-class>InfoSubmissionServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>InfoSubmission</servlet-name>
+    <url-pattern>/info_submission</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>InfoRetrieval</servlet-name>
+    <servlet-class>InfoRetrievalServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>InfoRetrieval</servlet-name>
+    <url-pattern>/info_retrieval</url-pattern>
+</servlet-mapping>
+
+</web-app>
