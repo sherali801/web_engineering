@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+<servlet>
+<servlet-name>MatrixMultiplicationServlet</servlet-name>
+<servlet-class>MatrixMultiplicationServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>MatrixMultiplicationServlet</servlet-name>
+<url-pattern>/MatrixMultiplicationServlet</url-pattern>
+</servlet-mapping>
+</web-app>
